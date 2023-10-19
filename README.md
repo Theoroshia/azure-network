@@ -3,7 +3,9 @@
 </p>
 
 <h1>Network Security Groups and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+
+<h2>Summary</h2>
+This readme.md outlines the installation of WireShark onto a virtual machine, and the usage of that application to inpect traffic between two Azure virtual machines. The purpose of this project was to get a better understanding of not just Azure but networking in general, and how we can use applications to inspect the various network protocols and how they operate. This project was repeated multiple times to ensure we gained a strong understanding of WireShark and it's basic functions.
 
 <h2>Environments and Technologies Used</h2>
 
