@@ -32,16 +32,16 @@ This readme.md outlines the installation of WireShark onto a virtual machine, an
 
 <h2 align="center">Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center" >
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/276994422-24f3efa5-71e9-4e38-b82d-d9aa21491685.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
 Our first step is to set-up two virtual machines in Microsoft Azure. One should be a Windows 10 installation, and the other an Ubuntu server installation. We should then connect to the Windows virtual machine by using Remote Desktop. We then install WireShark from http://www.wireshark.org .
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/276994845-89cef51b-a35d-46a0-ac87-3765156e1a0d.png" height="80%" width="80%">
 </p>
 <p>
 We open up WireShark and we can begin to start to inspect the network traffic that can occur between our two virtual machines. First, we filter for ICMP traffic. We must also enable ICMP traffic for the Ubuntu server, as by default it is turned off. We can do this in the network settings of the Azure admin panel. Then, using the private IP address of our Ubuntu virtual machine, we <i>ping</i> it from our Windows installation. The <i>ping</i> protocol uses ICMP to connect to different devices, and as soon as we use <i>ping</i> we notice in WireShark that data has been sent over the network. We can fiddle with this even more by turning ICMP on and off in the Azure panel for the Ubuntu installation. When it is on, <i>ping</i> requests go through as normal. When it is off, <i>ping</i> requests no longer function.
