@@ -44,7 +44,7 @@ Our first step is to set-up two virtual machines in Microsoft Azure. One should 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We open up WireShark and we can begin to start to inspect the network traffic that can occur between our two virtual machines. First, we filter for ICMP traffic. We must also enable ICMP traffic for the Ubuntu server, as by default it is turned off. We can do this in the network settings of the Azure admin panel. Then, using the private IP address of our Ubuntu virtual machine, we _ping_ it from our Windows installation. The _ping_ protocol uses ICMP to connect to different devices, and as soon as we use _ping_ we notice in WireShark that data has been sent over the network. We can fiddle with this even more by turning ICMP on and off in the Azure panel for the Ubuntu installation. When it is on, _ping_ requests go through as normal. When it is off, _ping_ requests no longer function.
+We open up WireShark and we can begin to start to inspect the network traffic that can occur between our two virtual machines. First, we filter for ICMP traffic. We must also enable ICMP traffic for the Ubuntu server, as by default it is turned off. We can do this in the network settings of the Azure admin panel. Then, using the private IP address of our Ubuntu virtual machine, we <i>ping</i> it from our Windows installation. The <i>ping</i> protocol uses ICMP to connect to different devices, and as soon as we use <i>ping</i> we notice in WireShark that data has been sent over the network. We can fiddle with this even more by turning ICMP on and off in the Azure panel for the Ubuntu installation. When it is on, <i>ping</i> requests go through as normal. When it is off, <i>ping</i> requests no longer function.
 </p>
 <br />
 
@@ -60,7 +60,7 @@ Next we filter for SSH traffic. SSH is the protocol for remotely connecting to a
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses to devices. To see this type of traffic, we go into the command line and use the _ipconfig /renew_ command. This command requests a new IP address for the Windows installation from the network. When we use this command, we will see traffic on the DHCP port (ports 67 and 68) within WireShark.
+Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses to devices. To see this type of traffic, we go into the command line and use the <i>ipconfig /renew_</i> command. This command requests a new IP address for the Windows installation from the network. When we use this command, we will see traffic on the DHCP port (ports 67 and 68) within WireShark.
 </p>
 <br />
 
