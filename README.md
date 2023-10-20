@@ -9,25 +9,28 @@ This readme.md outlines the installation of WireShark onto a virtual machine, an
 
 <h2 align="center">Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
 - Remote Desktop
 - Various Command-Line Tools
 - Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+- Wireshark
+  
+<h2 align="center">Operating Systems Used</h2>
 
-<h2>Operating Systems Used </h2>
-
-- Windows 10 (21H2)
+- Windows 10
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+<h2 align="center">Macro-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Set-up two virtual machines in Azure, a Windows 10 installation and an Ubuntu server installation.
+- Install WireShark onto the Windows 10 installation.
+- Observe all ICMP traffic between the two virtual machines using WireShark and _ping_.
+- Observe all SSH traffic between the two virtual machines using WireShark.
+- Observe all DHCP traffic between the two virtual machines using WireShark and _ipconfig_.
+- Observe all DNS traffic between the two virtual machines using WireShark and _nslookup_.
+- Observe all RDP traffic between the two virtual machines using WireShark.
 
-<h2>Actions and Observations</h2>
+<h2 align="center">Actions and Observations</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
