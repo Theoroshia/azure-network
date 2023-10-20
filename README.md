@@ -48,8 +48,8 @@ We open up WireShark and we can begin to start to inspect the network traffic th
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/1596195/276999472-88512868-e948-4f79-ba26-36d78b3c2968.png" height="80%" width="80%">
 </p>
 <p>
 Next we filter for SSH traffic. SSH is the protocol for remotely connecting to another device using the command line. To test this, we open the command line on our Windows installation and connect to our Ubuntu server using SSH. Then we can type various commands into the command line and observe the traffic that is created in WireShark. Any time we type, data is sent back and forth between the two virtual machines, and we can see this in WireShark.
