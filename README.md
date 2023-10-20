@@ -60,7 +60,7 @@ Next we filter for SSH traffic. SSH is the protocol for remotely connecting to a
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses to devices. To see this type of traffic, we go into the command line and use the <i>ipconfig /renew_</i> command. This command requests a new IP address for the Windows installation from the network. When we use this command, we will see traffic on the DHCP port (ports 67 and 68) within WireShark.
+Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses to devices. To see this type of traffic, we go into the command line and use the <i>ipconfig /renew</i> command. This command requests a new IP address for the Windows installation from the network. When we use this command, we will see traffic on the DHCP port (ports 67 and 68) within WireShark.
 </p>
 <br />
 
@@ -68,7 +68,7 @@ Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next we filter for DNS traffic. DNS is the protocol that converts website names into IP addresses. To see this type of traffic, we go into the command line and use the _nslookup_ command. This command takes a website address and returns the IP addresses that are commonly associated with those names. In this example we used Google and Disney. When we do this, we can see in WireShark DNS traffic being sent back and forth.
+Next we filter for DNS traffic. DNS is the protocol that converts website names into IP addresses. To see this type of traffic, we go into the command line and use the <i>nslookup</i> command. This command takes a website address and returns the IP addresses that are commonly associated with those names. In this example we used Google and Disney. When we do this, we can see in WireShark DNS traffic being sent back and forth.
 </p>
 <br />
 
