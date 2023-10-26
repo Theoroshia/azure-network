@@ -56,30 +56,29 @@ Next we filter for SSH traffic. SSH is the protocol for remotely connecting to a
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+![nwork-dhcp](https://github.com/Theoroshia/azure-network/assets/1596195/3717dd7d-c63c-40c5-b0f3-d1253df30b3e)  
 </p>
 <p>
 Next we filter for DHCP traffic. DHCP is the protocol that assigns IP addresses to devices. To see this type of traffic, we go into the command line and use the <i>ipconfig /renew</i> command. This command requests a new IP address for the Windows installation from the network. When we use this command, we will see traffic on the DHCP port (ports 67 and 68) within WireShark.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+![nwork-dns](https://github.com/Theoroshia/azure-network/assets/1596195/49d89978-402b-41b9-a156-1523e63652d4)
 </p>
 <p>
 Next we filter for DNS traffic. DNS is the protocol that converts website names into IP addresses. To see this type of traffic, we go into the command line and use the <i>nslookup</i> command. This command takes a website address and returns the IP addresses that are commonly associated with those names. In this example we used Google and Disney. When we do this, we can see in WireShark DNS traffic being sent back and forth.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+![nwork-rdp](https://github.com/Theoroshia/azure-network/assets/1596195/5fed951d-59db-4f4b-b0a1-1ca8230651cf)
 </p>
 <p>
 Next we filter for RDP traffic. RDP is the protocol for remote connecting to another device, and is what Remote Desktop uses to connect to other devices. When we filter for RDP traffic, we can see that traffic is being sent non-stop between our own computer and the Windows 10 virtual machine. This may seem strange, because even if we aren't doing anything on the virtual machine traffic is still being sent. However, that is because the remote connection is basically a 'live stream' of the virtual machine, and therefore data must be sent constantly to the home computer even if 'nothing' is actually happening.
 </p>
 <br />
-
 <p>
 With that our testing is done! We just have to delete our virtual machines and move onto the next project.
 </p>
